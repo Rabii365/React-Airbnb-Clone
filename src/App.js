@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import TopSection from "./components/TopSection";
+import Card from "./components/Card";
+import Data from "./components/Data";
 
-function App() {
+export default function App() {
+  const cardElem = Data.map((cardItem) => {
+    return (
+      <Card
+        key={cardItem.id}
+        /*img={cardItem.coverImg}
+        rating={cardItem.stats.rating}
+        reviewCount={cardItem.stats.reviewCount}
+        location={cardItem.location}
+        title={cardItem.title}
+        price={cardItem.price}
+        openSpots={cardItem.openSpots}*/
+        cardItem={cardItem}
+      />
+    );
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <TopSection />
+      <div className="cardContainer">{cardElem}</div>
     </div>
   );
 }
-
-export default App;

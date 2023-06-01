@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #e5e5e5;
+}
+
+.Bold {
+  font-weight: 700;
+}
+
+.container {
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 550px;
+  height: auto;
+  background-color: #ffffff;
+}
+
+nav {
+  height: 70px;
+  box-shadow: 0px 2px 7.46px 0px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  margin-top: 25px;
+  margin-left: 25px;
+  width: 82px;
+}
+
+.pics {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.picgrid {
+  width: 395px;
+}
+
+.desc-sec {
+  margin-top: 25px;
+}
+
+.desc-sec h2 {
+  margin-left: 53px;
+  margin-right: 150px;
+  margin-bottom: 15px;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 39.6px;
+}
+
+.desc-sec p {
+  margin-left: 53px;
+  margin-right: 150px;
+  font-size: 16px;
+  line-height: 17.6px;
+  font-weight: 300;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  gap: 10px;
+  overflow-y: auto;
+}
+
+.card {
+  /*display: grid;
+  grid-template-columns: repeat(3, 176px);
+  grid-gap: 18px;
+  margin-left: 35px;
+  margin-top: 25px;*/
+  width: 175px;
+
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+}
+
+.card img {
+  border-radius: 9px;
+}
+
+.card p {
+  font-size: 12px;
+  margin-block: 7px;
+}
+
+.card-1desc {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 13.2px;
+}
+
+.lil-desc {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.lil-desc img {
+  width: 14px;
+  margin-block: 7px;
+  margin-right: 3px;
+}
+
+.lil-desc span {
+  color: #222222;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 13.2px;
+  margin-right: 3px;
+}
+
+.lil-desc p {
+  color: #918e9b;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 13.2px;
+}
+
+.jpunch {
+  font-weight: 700;
+  border-bottom: 1px solid black;
+}
+
+.soldout {
+  position: absolute;
+  background-color: #e5e5e5;
+  top: 5px;
+  left: 5px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 3px;
+}
